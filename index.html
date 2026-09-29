@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danuvem - Sua Nuvem. Seus Aplicativos. Seu Controle.</title>
+    <meta name="description" content="Plataforma de hospedagem na nuvem baseada em SetAPI. Hospede aplicativos de várias tecnologias com APIs automáticas, WebSocket em tempo real e mais.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18C3.23858 18 1 15.7614 1 13C1 10.5517 2.76016 8.5146 5.09346 8.08375C5.5562 4.60527 8.52841 2 12 2C15.866 2 19 5.13401 19 9C21.7614 9 24 11.2386 24 14C24 16.7614 21.7614 19 19 19H12H6V18Z"/>
+                </svg>
+                Danuvem
+            </a>
+            <div class="nav-links">
+                <a href="#recursos">Recursos</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#precos">Preços</a>
+                <a href="#" class="btn btn-primary">Começar Agora</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Abrir menu">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-on-scroll">A Hospedagem do <span>Futuro</span></h1>
+            <p class="hero-subtitle" id="typewriter"></p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#" class="btn btn-primary">Criar Conta Grátis</a>
+                <a href="#recursos" class="btn btn-outline">Explorar Recursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="recursos">
+        <h2 class="section-title animate-on-scroll">Poder e <span>Flexibilidade</span></h2>
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>Hospedagem Multi-Tecnologia</h3>
+                <p>Hospede aplicações em diversas linguagens e frameworks em um único lugar, com suporte nativo a Docker e EasyPanel.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M10 20L14 4M18 8L22 12L18 16M6 16L2 12L6 8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>APIs Automáticas</h3>
+                <p>Backend robusto com PostgreSQL e Redis. Geração automática de APIs REST com integração PostgREST e RLS avançado.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>Tempo Real</h3>
+                <p>Eventos WebSocket em tempo real para criar aplicações reativas, chats e painéis de controle instantâneos.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>Isolamento e Segurança</h3>
+                <p>Isolamento multi-organização, autenticação MFA e segurança de ponta baseada no poder do SetAPI.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M17 8L12 3M12 3L7 8M12 3V15" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>Storage Integrado</h3>
+                <p>Armazenamento flexível compatível com S3, R2 e Google Drive diretamente integrado aos seus projetos.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <svg class="feature-icon" viewBox="0 0 24 24">
+                    <path d="M12 22S8 18 8 12V6L12 2L16 6V12C16 18 12 22 12 22Z" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <h3>Backups Criptografados</h3>
+                <p>Seus dados sempre seguros com backups automatizados e criptografados de ponta a ponta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="tecnologias">
+        <h2 class="section-title animate-on-scroll">Sua Linguagem, <span>Nossa Nuvem</span></h2>
+        <p class="text-center animate-on-scroll" style="color: var(--text-muted); margin-bottom: 2rem;">Hospede o que quiser. Nós cuidamos do resto.</p>
+        <div class="tech-grid animate-on-scroll">
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12"/></svg>
+                <span>Python</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M11.9 2.1c-1.3-.1-2.9.2-4.3 1-1.6.8-2.6 2-3 3.4-.4 1.5-.1 3.1 1 4.3 1.1 1.1 2.8 1.4 4.3 1 1.4-.4 2.6-1.5 3-2.9.4-1.5.1-3.2-1-4.3-1.1-1-2.6-1.3-4-1m2.1 4.9c-.3.8-1.2 1.3-2 1.1-.9-.2-1.4-1-1.1-1.9.3-.9 1.1-1.3 2-1.1.9.2 1.4 1.1 1.1 1.9z"/></svg>
+                <span>Node.js</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M6 3h12v2H6zm0 16h12v2H6z"/></svg>
+                <span>PHP</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V6z"/></svg>
+                <span>Java</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                <span>Go</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9-9 9z"/></svg>
+                <span>Ruby</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+                <span>.NET</span>
+            </div>
+            <div class="tech-item">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Rust</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="como-funciona">
+        <h2 class="section-title animate-on-scroll">Como <span>Funciona</span></h2>
+        <div class="steps-container">
+            <div class="step animate-on-scroll">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Conecte seu Repositório</h3>
+                    <p>Vincule sua conta do GitHub ou GitLab e escolha o projeto que deseja implantar. Nossa plataforma detecta automaticamente a tecnologia.</p>
+                </div>
+            </div>
+            <div class="step animate-on-scroll">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Configure o Ambiente</h3>
+                    <p>Defina as variáveis de ambiente, configure o acesso ao banco de dados PostgreSQL incluído e escolha onde salvar os arquivos no Storage.</p>
+                </div>
+            </div>
+            <div class="step animate-on-scroll">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Deploy Automático</h3>
+                    <p>Com um clique, sua aplicação está no ar. A cada push no repositório, atualizamos sua aplicação sem tempo de inatividade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="precos">
+        <h2 class="section-title animate-on-scroll">Planos <span>Transparentes</span></h2>
+        <div class="pricing-grid">
+            <div class="pricing-card animate-on-scroll">
+                <h3>Starter</h3>
+                <div class="pricing-price">R$ 29<span>/mês</span></div>
+                <p>Perfeito para pequenos projetos e protótipos.</p>
+                <ul class="pricing-features">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> 1 Projeto</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Banco PostgreSQL Compartilhado</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> 5GB Storage</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Certificado SSL Automático</li>
+                </ul>
+                <a href="#" class="btn btn-outline" style="width: 100%;">Assinar Starter</a>
+            </div>
+            <div class="pricing-card popular animate-on-scroll">
+                <div class="pricing-badge">Mais Popular</div>
+                <h3>Pro</h3>
+                <div class="pricing-price">R$ 99<span>/mês</span></div>
+                <p>Para profissionais e negócios em crescimento.</p>
+                <ul class="pricing-features">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> 10 Projetos</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Banco PostgreSQL Dedicado</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> 50GB Storage S3</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Backups Automáticos Diários</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> APIs REST e WebSockets</li>
+                </ul>
+                <a href="#" class="btn btn-primary" style="width: 100%;">Assinar Pro</a>
+            </div>
+            <div class="pricing-card animate-on-scroll">
+                <h3>Enterprise</h3>
+                <div class="pricing-price">Personalizado</div>
+                <p>Para aplicações de alto tráfego e missões críticas.</p>
+                <ul class="pricing-features">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Projetos Ilimitados</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Cluster de Banco de Dados</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Storage Escalável</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Isolamento em VPC</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> Suporte 24/7 Premium</li>
+                </ul>
+                <a href="#" class="btn btn-outline" style="width: 100%;">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Danuvem</h4>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Sua nuvem. Seus aplicativos. Seu controle. Desenvolvido com o poder do SetAPI.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Produto</h4>
+                <ul class="footer-links">
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#precos">Preços</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Conectar</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/daset-net/setapi" target="_blank">GitHub (SetAPI)</a></li>
+                    <li><a href="mailto:contato@danuvem.com">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Danuvem. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
