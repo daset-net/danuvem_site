@@ -392,6 +392,8 @@ section {
 .solution-icon.icon-tools svg { stroke: var(--warning); fill: none; }
 .solution-icon.icon-hosting { background: rgba(244,114,182,0.12); }
 .solution-icon.icon-hosting svg { stroke: #f472b6; fill: none; }
+.solution-icon.icon-design { background: rgba(249,115,22,0.12); }
+.solution-icon.icon-design svg { stroke: #f97316; fill: none; }
 .solution-card h3 {
     font-size: 1.3rem;
     font-weight: 700;
@@ -421,6 +423,7 @@ section {
 .solution-tag.tag-blue { background: rgba(56,189,248,0.1); color: var(--accent-secondary); border-color: rgba(56,189,248,0.2); }
 .solution-tag.tag-yellow { background: rgba(251,191,36,0.1); color: var(--warning); border-color: rgba(251,191,36,0.2); }
 .solution-tag.tag-pink { background: rgba(244,114,182,0.1); color: #f472b6; border-color: rgba(244,114,182,0.2); }
+.solution-tag.tag-orange { background: rgba(249,115,22,0.1); color: #f97316; border-color: rgba(249,115,22,0.2); }
 .solution-link {
     display: inline-flex;
     align-items: center;
