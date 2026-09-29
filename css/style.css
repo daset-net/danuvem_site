@@ -81,19 +81,30 @@ nav {
     margin: 0 auto;
 }
 .logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
+    text-decoration: none;
+    transition: transform var(--transition);
 }
-.logo svg { filter: drop-shadow(0 0 8px var(--primary-glow)); }
+.logo:hover {
+    transform: translateY(-1px);
+}
+.logo-img {
+    height: 38px;
+    width: auto;
+    max-width: 175px;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.28));
+    transition: filter var(--transition), transform var(--transition);
+}
+.logo:hover .logo-img {
+    filter: drop-shadow(0 0 24px rgba(56, 189, 248, 0.55));
+}
+.footer-brand .logo-img {
+    height: 34px;
+    margin-bottom: 0.5rem;
+}
 .nav-links {
     display: flex;
     align-items: center;
